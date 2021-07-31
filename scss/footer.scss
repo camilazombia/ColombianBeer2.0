@@ -1,0 +1,40 @@
+.footer{
+    margin-top: 2rem;
+    background-color: $color-blue;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        &_icons{
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            &--icon{
+                color: $color-white;
+                padding:0px 20px ;
+                font-size: 20px;
+            }
+        }
+        &_legal{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            letter-spacing: 2px;
+            word-spacing: 15px;
+            &--text{
+                color: $color-white;
+                font-family: itc-american-typewriter, serif;
+                font-weight: 800;
+                text-transform: uppercase;
+                font-size: 6px;
+                text-align: center;
+    
+            }
+        }
+    
+    }
