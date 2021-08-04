@@ -42,7 +42,7 @@
   
   <!-- Modal Cart -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal_title" id="exampleModalLabel">Mi carrito</h5>
@@ -52,16 +52,36 @@
         </div>
         <div class="modal-body">
 
-
-
-
+        
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn modal_buy">Comprar</button>
+          <p class="header_content">Total:</p><p class="header_content cart-total">0</p>
+          <button type="button" class="cart__buy modal_buy" data-toggle="modal" href="#comprarModal">Comprar</button>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal_title" id="comprarModalLabel">Gracias por su compra</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <p class="header_content">Pronto recibirá su pedido</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="cart__buy modal_buy"" data-dismiss="modal">Cerrar</button>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- END MODAL COMPRA -->
 <!-- footer -->
     <footer class="footer">
         <div class="footer_icons">

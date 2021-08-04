@@ -207,32 +207,73 @@
     font-size: 1.2rem;
     line-height: 0; }
 
-.modal_title {
-  font-family: blenny, sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 35px;
-  color: #0039ea; }
-
-.modal_buy {
-  width: 40%;
-  height: 40%;
-  display: inline-block;
-  border: none;
-  margin: 0;
-  text-decoration: none;
-  background: #0039ea;
-  color: #0a0a08;
-  font-family: itc-american-typewriter, serif;
-  font-size: 10px;
-  cursor: pointer;
-  text-align: center;
-  transition: background 250ms ease-in-out, transform 150ms ease;
-  box-shadow: -3px 3px 0px #0a0a08;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  border-radius: none;
-  color: #fff; }
+.modal {
+  height: 100%; }
+  .modal_title {
+    font-family: blenny, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    color: #0039ea; }
+  .modal_buy {
+    width: 40%;
+    height: 50px;
+    display: inline-block;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    background: #0039ea;
+    color: #0a0a08;
+    font-family: itc-american-typewriter, serif;
+    font-size: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, transform 150ms ease;
+    box-shadow: -3px 3px 0px #0a0a08;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: none;
+    color: #fff; }
+  .modal-body {
+    height: max-content; }
+  .modal .cart__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .modal .cart__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; }
+  .modal .cart__img {
+    width: 10%; }
+    .modal .cart__img--item {
+      width: 120px; }
+  .modal .cart__title--item {
+    font-family: itc-american-typewriter, serif;
+    font-size: 20px;
+    font-weight: bold; }
+  .modal .cart__price--item {
+    font-family: itc-american-typewriter, serif;
+    font-size: 20px; }
+  .modal .cart__quantity--item {
+    width: 50px;
+    border: 2px solid red;
+    border-radius: 4px;
+    font-family: itc-american-typewriter, serif;
+    font-size: 20px; }
+  .modal .cart__btn--item {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background-color: #ee0a01;
+    padding: 2px 15px;
+    border-radius: 100px;
+    color: white; }
+    .modal .cart__btn--item:hover {
+      background-color: #0039ea; }
 
 .footer {
   margin-top: 2rem;
