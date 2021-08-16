@@ -2,7 +2,6 @@ $('#myModal').on('shown.bs.modal', function () {
     $('#myInput').trigger('focus')
   })
 
-
 var productos=[
     {
         'id' : 1,
@@ -95,24 +94,28 @@ var productos=[
 
   }
 
+  
+
+
 const CardBtn =  document.querySelectorAll('.cards_btn--item');
+
 CardBtn.forEach(addtocart => {
     addtocart.addEventListener('click', addcart);
+
 });
 
 const buybutton = document.querySelector('.cart__buy');
 buybutton.addEventListener('click', buybtn);
 
 function addcart (event) {
-    const btn= event.target;
+    const btn = event.target;
     const item =btn.closest('.cards_item');
 
     let producttitle = item.querySelector('.cards_title').textContent;
     let productprice = item.querySelector('.cards_price').textContent;
     let productimage = item.querySelector('.cards_img').src;
-
-    additem(producttitle, productprice, productimage);
-    
+ 
+    additem(producttitle, productprice, productimage);    
 }
 let modalbody = document.querySelector('.modal-body');
 
@@ -142,12 +145,14 @@ function additem (producttitle, productprice, productimage){
 
     cartdiv.innerHTML = cartitem;
     modalbody.append(cartdiv);
+   
 
     cartdiv.querySelector('.cart__btn--item').addEventListener('click', deleteitem);
     cartdiv.querySelector('.cart__quantity--item').addEventListener('change', quantitychange);
 
     CartSum();
 }
+
 
 function CartSum (){
     let total=0;
@@ -184,7 +189,6 @@ function buybtn(){
 modalbody.innerHTML = '' ;
 CartSum();
 }
-
 
 
 
