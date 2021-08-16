@@ -192,13 +192,29 @@
           flex-direction: column;
             align-items: center;
             margin: 0 auto;
+
+            
+        }
+
+        .btn_text{
+          font-family: itc-american-typewriter, serif;
+      font-size: 20px;
+      font-weight: 600;
+      text-align: justify;
+      padding: 2%;
         }
           .age_btn--item {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            box-sizing: border-box;
+            padding: 15px;
             display: flex;
             flex-direction: row;
             align-items: center;
-            width: 50%;
-            height: 200px;
+            width: max-content;
+            height: max-content;
             display: inline-block;
             border: none;
             margin: 0;
@@ -351,3 +367,16 @@
   text-decoration: none;
   border: none;
   outline: none; }
+
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 0px solid #ccc;
+    border-bottom: 2px solid #ccc;;
+    box-sizing: border-box;
+    font-family: itc-american-typewriter, serif;
+      font-weight: 800;
+      text-transform: uppercase;
+  }

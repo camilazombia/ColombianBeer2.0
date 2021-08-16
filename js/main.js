@@ -4,17 +4,31 @@ $('#myModal').on('shown.bs.modal', function () {
 
   const URLJSON = "js/productos.json"
 
+
   //Agregamos un botón con jQuery
-  $(".age_btn").append('<button id="btn1" class="age_btn age_btn--item">Ingresa si eres mayor de edad</button>');
+  $(".age_btn").append(`
+  <p class="btn_text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum diam at pretium convallis.
+  Fusce urna orci, sagittis eget faucibus tempor, semper a turpis. Etiam maximus, nibh eu vestibulum 
+  finibus, ligula libero blandit velit, nec viverra augue neque ut est. Duis a lacinia magna. 
+  Nam sodales ut arcu pharetra placerat. Aenean sodales mattis magna, et mollis neque ornare a.</p>
+  <form>
+  <input type="text" id="lname" name="lname" value="Tu Nombre"><br><br>
+  </form> 
+  <button id="btn1" class="age_btn--item">Soy Mayor de edad</button>
   
-  //Escuchamos el evento click del botón agregado
-  $("#btn1").click(() => { 
+  
+  `);
+
+    $("#btn1").click(() => { 
+
   $.getJSON(URLJSON, function (respuesta, estado) {
+
+    var name = $('#lname').val();
+    localStorage.setItem("Nombre", name);
+    
       if(estado === "success"){
         let productos = respuesta;
         $(".age_btn").css("display", "none");
-
-        // RELLENAR
         for (const producto of productos) {
           $('.cards_product').append (`
           <div class="cards_item">
@@ -31,8 +45,6 @@ $('#myModal').on('shown.bs.modal', function () {
           `);
         }  
       }
-
-
 
 
 const CardBtn =  document.querySelectorAll('.cards_btn--item');
