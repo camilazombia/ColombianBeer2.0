@@ -7,10 +7,7 @@ $('#myModal').on('shown.bs.modal', function () {
 
   //Agregamos un botón con jQuery
   $(".age_btn").append(`
-  <p class="btn_text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum diam at pretium convallis.
-  Fusce urna orci, sagittis eget faucibus tempor, semper a turpis. Etiam maximus, nibh eu vestibulum 
-  finibus, ligula libero blandit velit, nec viverra augue neque ut est. Duis a lacinia magna. 
-  Nam sodales ut arcu pharetra placerat. Aenean sodales mattis magna, et mollis neque ornare a.</p>
+  <p class="btn_text"> Ingresa tu nombre y acepta que eres mayor de edad para ingresar</p>
   <form>
   <input type="text" id="lname" name="lname" value="Tu Nombre"><br><br>
   </form> 
